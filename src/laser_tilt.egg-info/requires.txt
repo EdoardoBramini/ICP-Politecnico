@@ -1,0 +1,4 @@
+numpy>=1.23
+
+[plot]
+matplotlib>=3.7

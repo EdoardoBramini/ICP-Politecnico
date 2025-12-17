@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: laser_tilt
+Version: 0.1.0
+Summary: Real-time section alignment + correction using ICP
+Author: Edoardo Bramini
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.23
+Provides-Extra: plot
+Requires-Dist: matplotlib>=3.7; extra == "plot"
+Dynamic: requires-python
