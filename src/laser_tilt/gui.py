@@ -43,9 +43,6 @@ class ICPGui(tk.Tk):
         tk.Label(opts, text="Max iterations:").grid(row=0, column=2, sticky="w", padx=(20, 0))
         tk.Entry(opts, textvariable=self.max_iter, width=8).grid(row=0, column=3, sticky="w", padx=6)
 
-        tk.Label(opts, text="Tolerance:").grid(row=0, column=4, sticky="w", padx=(20, 0))
-        tk.Entry(opts, textvariable=self.tol, width=12).grid(row=0, column=5, sticky="w", padx=6)
-
         tk.Button(opts, text="Compute ICP", command=self._compute).grid(row=0, column=6, padx=(20, 0))
 
         self.out = ScrolledText(self, height=30)
@@ -98,7 +95,6 @@ class ICPGui(tk.Tk):
                 tpath, mpath,
                 downsample_step=ds,
                 max_iterations=mi,
-                tolerance=tol,
             )
             self._last = (res, Tcorr)
 
